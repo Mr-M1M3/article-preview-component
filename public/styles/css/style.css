@@ -12,6 +12,7 @@ html{
     height: auto;
     min-height: 100vh;
     font-size: 16px;
+    font-family: 'Manrope', sans-serif;
 }
 body{
     height: auto;
@@ -19,4 +20,91 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+main{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdfdfd;
+    border-radius: 0.5rem;
+}
+div.image{
+    flex: 0.4;
+    border-radius: 0.5rem;
+}
+
+div.image > img{
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+div.content{
+    flex: 0.6;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h3.title{
+    line-height: 1.5rem;
+    color: hsl(217, 19%, 35%);
+}
+p.details{
+    text-align: justify;
+    line-height: 1.3rem;
+    color: hsl(214, 17%, 51%);
+    /* background-color: red; */
+}
+div.profile{
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    gap: 1rem;
+    align-content: center;
+}
+div.avatar > img{
+    border-radius: 50%;
+}
+div.id{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.id span:first-child{
+    color: hsl(217, 19%, 35%);
+}
+div.id span:last-child{
+    color: hsl(212, 23%, 69%);
+}
+div.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 900px) {
+   h3.title{
+       margin-bottom: 1rem;
+   } 
+   p.details{
+       margin-bottom: 1rem;
+   }
+}
+@media screen and (max-width: 732px){
+    main{
+        flex-direction: column;
+    }
+    div.image{
+        margin-bottom: 2rem;
+    }
+    div.image > img{
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+    h3.title{
+        text-align: left;
+    }
+    p.details{
+        text-align: left;
+    }
 }
