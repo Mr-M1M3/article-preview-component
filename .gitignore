@@ -1,5 +1,5 @@
 public/res/guide/
 node_modules/
 *.json
-# .gitignore
+.gitignore
 .browserslistrc
