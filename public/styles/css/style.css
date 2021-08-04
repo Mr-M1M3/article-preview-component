@@ -82,7 +82,7 @@ div.share{
     justify-content: center;
     align-items: center;
 }
-/* Making The Web Responsive */
+/* Makes The Web Responsive */
 @media screen and (max-width: 900px) {
    h3.title{
        margin-bottom: 1rem;
